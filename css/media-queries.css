@@ -12,12 +12,12 @@
    .header {
       height: auto;
    }
-   .header_center_2 {
+   .header_mobile {
       display: none;
    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1120px) {
    .pagewrap {
       width: 100%;
       margin: 0 auto;
@@ -28,14 +28,38 @@
       padding: 0;
    }
    .header {
+      display: none;
       height: auto;
    }
-   .header_center_2 {
-      display: none;
+ 
+   .header_mobile {
+      display: block;
+      padding: 10px 0 0 10px;
    }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 920px) {
+   .pagewrap {
+      width: 100%;
+      margin: 0 auto;
+   }
+   .container {
+      max-width: 100%;
+      width: 100%;
+      padding: 0;
+   }
+   .header {
+      display: none;
+      height: auto;
+   }
+ 
+   .header_mobile {
+      display: block;
+      padding: 10px 0 0 10px;
+   }
+}
+
+@media screen and (max-width: 600px) {
    .pagewrap {
       width: 100%;
       
@@ -46,28 +70,38 @@
    }
 
    .header {
+      display: none;
       height: auto;
    }
-   
-   .basket {
-      display: none;
-   }
-
-   .text_ {
-      display: none;
-   }
-
-   .header_center {
-      display: none;
-   }
-   .header_center_2 {
+ 
+   .header_mobile {
       display: block;
       padding: 10px 0 0 10px;
    }
-   .login {
-      display: inline-block;
-      text-align: center;
-      margin: -35px 0 0 0;
+
+    nav { 
+      height: auto;
+    }
+    nav ul {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+    nav li {
+      width: 50%;
+      float: left;
+      position: relative;
+    }
+    nav li a {
+    border-bottom: 1px solid #576979;
+    border-right: 1px solid #576979;
+  }
+    nav a {
+      text-align: left;
+      width: 100%;
+      text-indent: 25px;
+    }
+   
 }
 
 @media screen and (max-width: 480px) {
@@ -84,32 +118,48 @@
    }
    
    .header {
+      display: none;
       height: auto;
    }
-   
-   .basket {
-      display: none;
-   }
-
-   .text_ {
-      display: none;
-   }
-
-   .header_center {
-      display: none;
-   }
-   
-   .header_center_2 {
+ 
+   .header_mobile {
       display: block;
       padding: 10px 0 0 10px;
    }
 
-   .login {
-      display: inline-block;
-      text-align: center;
-      margin: -35px 0 0 0;
-   }
-   .poisk {
-     
-   }
+  nav {
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav a#pull {
+    display: block;
+    /*background-color: #283744;*/
+    width: 100%;
+    position: relative;
+  }
+  nav a#pull:after {
+    content:" ";
+    background: url('/img/burger_menu.png') no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+
+}
+
+@media only screen and (max-width : 320px) {
+  nav li {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  nav li a {
+    border-bottom: 1px solid #576979;
+  }
 }
