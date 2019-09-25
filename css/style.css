@@ -178,12 +178,13 @@ z-index: 1;
           transition-delay: 0.25s;
 }
 
-/* Всплывающий текст на картинку */
-
-
-
 img.launch_24px {
   display: inline-block;
+}
+/* Всплывающий текст на картинку */
+
+.uslugi {
+  background: url('img/burger_menu.png') no-repeat;
 }
 
 .phone {
