@@ -64,18 +64,19 @@
 
   <div class="header_mobile">
     <div class="container"> 
-     <div class="row"> 
+     <div class="row">
+        <div class="col"><a href="#"><img src="img/logo_big.png" alt="Сеть медицинских клиник по РФ" title="" class="img_logo"></a></div> 
         <div class="col">
               <p><span><a href="#"><img src="img/eye_header.png" alt="Версия для слабовидящих" title="" class="img_eye"></a>
                 <span class="eye_popup">Версия для слабовидящих</span> 
               </span> 
               </p>
         </div>
-        <div class="col"><span style="padding: 0 0 0 0; font-weight: bold;"><a style="color: #000;" href="#">+7 (8162) 28-03-03</a></span></div>
+        <!--<div class="col"><span style="padding: 0 0 0 0; font-weight: bold;"><a style="color: #000;" href="#">+7 (8162) 28-03-03</a></span></div>-->
         <div class="col"><a href="#"><img src="img/phone_button.png" alt="" title="" class="phone_button"></a></div>
         <div class="col"><a href="#"><img src="img/location.png" alt="" title="" class="location"></a></div>
-        <div style="background: url('img/burger_menu.png') no-repeat;" class="col">
-            <nav class="clearfix">
+        <div class="col">
+            <nav class="clearfix burger_menu">
               <ul class="clearfix menu-main">
                 <li><a href="#">Услуги</a></li>
                 <li><a href="#">Направления</a></li>
@@ -93,7 +94,7 @@
 
   <div class="main_slider"> 
    <div style="background: url('img/background_pink.png') no-repeat;" class="container">
-    <span style="width: 187px; height: 70px;"><a href="#"><img src="img/logo.png" alt="" title="" class="logo_img"></a></span>
+    <span class="logo_disappear" style="width: 187px; height: 70px;"><a href="#"><img src="img/logo.png" alt="" title="" class="logo_img"></a></span>
      <div class="row"> 
         <div class="col">
         <h2>Диагностика в ЦМРТ</h2>
@@ -120,7 +121,7 @@
             <div class="caption">
               <span class="title">Диагностика</span>
               <span class="info">Для успешного лечения любого заболевания важна своевременная постановка...</span>
-              <span class="detail"><a href="#">Подробнее <img style=" width: 14px; height: 14px;" src="img/mini_slider/launch_24px.png" alt="" title="" class="launch_24px"></a></span>
+              <span class="detail_1"><a href="#">Подробнее <img style=" width: 14px; height: 14px;" src="img/mini_slider/launch_24px.png" alt="" title="" class="launch_24px"></a></span>
             </div>
           </div>
         </div>
@@ -132,7 +133,7 @@
             <div class="caption">
               <span class="title">Неврология</span>
               <span class="info">Для успешного лечения любого заболевания важна своевременная постановка...</span>
-              <span class="detail"><a href="#">Подробнее <img style=" width: 14px; height: 14px;" src="img/mini_slider/launch_24px.png" alt="" title="" class="launch_24px"></a></span>
+              <span class="detail_1"><a href="#">Подробнее <img style=" width: 14px; height: 14px;" src="img/mini_slider/launch_24px.png" alt="" title="" class="launch_24px"></a></span>
             </div>
           </div>
         </div>
@@ -144,7 +145,7 @@
             <div class="caption">
               <span class="title">Ортопедия</span>
               <span class="info">Для успешного лечения любого заболевания важна своевременная постановка...</span>
-              <span class="detail"><a href="#">Подробнее <img style=" width: 14px; height: 14px;" src="img/mini_slider/launch_24px.png" alt="" title="" class="launch_24px"></a></span>
+              <span class="detail_1"><a href="#">Подробнее <img style=" width: 14px; height: 14px;" src="img/mini_slider/launch_24px.png" alt="" title="" class="launch_24px"></a></span>
             </div>
           </div>
         </div>
@@ -157,13 +158,40 @@
    <div class="container">
     <h2>Услуги</h2>
        <div class="row"> 
-          <div class="col-md-4 col-sm-4 col-xs-12">Left column USLUGI</div>
-          <div class="col-md-8 col-sm-8 col-xs-12">
-            <div class="search">Поиск</div>
+          <div class="col-md-4 col-sm-4 col-xs-12 cmrt-centri">
+            <div class="centri_nizh"><p>ЦМРТ-центры  в Нижнем Новгороде</p></div>
+            <div class="kolmov_nab"><p><a href="#">Колмовская набережная, 3</a></p></div>
+            <div class="ul_lomonosova"><p><a href="#">ул. Ломоносова, д. 25 (Поликлиника №4)</a></p></div>
+            <div class="look_maps"><p><a href="#">Посмотреть на карте <img src="img/pins_24px.png" alt="" title="" class="launch_24px"></a></p></div>
+          </div>
+          <div class="col">
+            <div class="poisk">
+             <form action="" method="post" class="search">
+              <input type="search" name="" placeholder="Введите название услуги" class="input" />
+              <input type="submit" name="" value="" class="submit" />   
+             </form>
+            </div>
             <div class="container"> 
               <div class="row"> 
-                <div class="col-md-4 col-sm-6 col-xs-12">Консультации</div>
-                <div class="col-md-4 col-sm-6 col-xs-12">Лечение</div> 
+                <div class="col">
+                  <div class="title_uslugi"><p>Консультация <span class="ellipse">6</span></p></div>
+                  <div class="text_uslugi"><p>Невролог</p></div>
+                  <div class="text_uslugi"><p>Ортопед-травмотолог</p></div>
+                  <div class="text_uslugi"><p>Остеопад</p></div>
+                  <div class="text_uslugi"><p>Косметолог</p></div>
+                  <div class="text_uslugi"><p>Рентгенелог</p></div>
+                  <div class="text_uslugi"><p>Нейрохирург</p></div>
+                </div>
+                <div class="col">
+                  <div class="title_uslugi"><p>Лечение <span class="ellipse">7</span></p></div>
+                  <div class="text_uslugi"><p>Вытяжение позвоночника</p></div>
+                  <div class="text_uslugi"><p>Процедурный кабинет</p></div>
+                  <div class="text_uslugi"><p>Лечебный массаж</p></div>
+                  <div class="text_uslugi"><p>Подбор ортопедии</p></div>
+                  <div class="text_uslugi"><p>Фармакопунктура</p></div>
+                  <div class="text_uslugi"><p>Физиотерапия</p></div>
+                  <div class="text_uslugi"><p>Мануальная терапия</p></div>
+                </div> 
               </div> 
             </div>
           </div> 
@@ -173,10 +201,20 @@
 
   <div class="diagnostika">
     <div class="container">
-      <h2>МРТ-диагностика</h2>
+      <h2></h2>
          <div class="row"> 
-            <div class="col">4 Фото Диагностики</div>
-            <div class="col">МРТ-диагностика текстовый блок</div> 
+            <div class="col">
+              <div class="mrt_diagnostika_1"><img src="img/mrt_diagnostika_1.png" alt="" title="" class="img_mrt_diagnostika_1"></div>
+              <div class="mrt_diagnostika_2"><img src="img/mrt_diagnostika_2.png" alt="" title="" class="img_mrt_diagnostika_2"></div>
+              <div class="mrt_diagnostika_3"><img src="img/mrt_diagnostika_3.png" alt="" title="" class="img_mrt_diagnostika_3"></div>
+              <div class="mrt_diagnostika_4"><img src="img/mrt_diagnostika_4.png" alt="" title="" class="img_mrt_diagnostika_4"></div>
+            </div>
+            <div class="col">
+                  <div class="title_diagnostika">МРТ-диагностика</div>
+                  <div class="sub_title_diagnostika">лучший способ визуализации органов</div>
+                  <div class="text_diagnostika">Метод МРТ основан на возникновении резонанса в ядрах клеток по д воздействием магнитных полей. Компьютер считывает эту информацию, анализирует ее и выдает на монитор в виде изображения среза органа в нужной проекции на разных уровнях</div>
+                  <div class="detail"><a href="#">Подробнее о МРТ <img style=" width: 14px; height: 14px;" src="img/mini_slider/launch_24px.png" alt="" title="" class="launch_24px"></a></div>
+            </div> 
          </div> 
     </div>
   </div>
@@ -185,10 +223,22 @@
     <div class="container">
       <h2></h2>
          <div class="row"> 
-            <div class="col">Круглосуточно  и без выходных</div>
-            <div class="col">Стоимость МРТ от 1800 ₽</div>
-            <div class="col">Обследование в день обращения</div>
-            <div class="col">30% скидка на обследования ночью</div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="utp_logo_1"><img src="img/utp/restore_24px.png" alt="" title="" class="restore_24px"></div>
+              <div class="utp_text_1">Круглосуточно  и без выходных</div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="utp_logo_2"><img src="img/utp/account_balance_wallet_24px.png" alt="" title="" class="account_balance_wallet_24px"></div>
+              <div class="utp_text_2">Стоимость МРТ  от 1800 ₽</div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="utp_logo_3"><img src="img/utp/event_24px.png" alt="" title="" class="event_24px"></div>
+              <div class="utp_text_3">Обследование в день  обращения</div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="utp_logo_4"><img src="img/utp/brightness_4_24px.png" alt="" title="" class="brightness_4_24px"></div>
+              <div class="utp_text_4">30% скидка на  обследования ночью</div>
+            </div>
          </div> 
     </div>
   </div>
@@ -197,18 +247,45 @@
     <div class="container">
       <h2></h2>
          <div class="row"> 
-            <div class="col">Преимущества МРТ-диагностики</div>
-            <div class="col">GE Signa Echospeed Plus 1,5 Тл</div> 
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="title_preimuschestva">Преимущества МРТ-диагностики</div>
+              <div class="text_preimuschestva">высокая детализация</div>
+              <div class="text_preimuschestva">безопасность, нет лучевой нагрузки на пациенте</div>
+              <div class="text_preimuschestva">возможность оценить строение и функцию органа крововснабжение</div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="title_preimuschestva">GE Signa Echospeed Plus 1,5 Тл</div>
+              <div class="text_GE_Signa_Echospeed_Plus">Наши центры оборудованы высокопольными магнитно-резонансными томографами экспертного уровня</div>
+                <div class="container"> 
+                 <div class="row"> 
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <div class="detail"><a href="#">Подробнее о томографах <img style=" width: 14px; height: 14px;" src="img/mini_slider/launch_24px.png" alt="" title="" class="launch_24px"></a></div>
+                      <div class="detail"><a href="#">Показания к МРТ <img style=" width: 14px; height: 14px;" src="img/mini_slider/launch_24px.png" alt="" title="" class="launch_24px"></a></div>
+                      <div class="detail"><a href="#">Противопоказания к МРТ <img style=" width: 14px; height: 14px;" src="img/mini_slider/launch_24px.png" alt="" title="" class="launch_24px"></a></div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <img src="img/GE_Signa_Echospeed_Plus.png" alt="" title="" class="img_GE_Signa_Echospeed_Plus">
+                    </div> 
+                 </div> 
+                </div>
+                  
+            </div> 
          </div> 
     </div>
   </div>
 
   <div class="recomendation">
     <div class="container">
-      <h2>Рекомендации по подготовке к МРТ-диагностике</h2>
+      <div class="title_recomendation">Рекомендации по подготовке к МРТ-диагностике</div>
          <div class="row"> 
-            <div class="col">1 2 обзац</div>
-            <div class="col">3 4 обзац</div> 
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="text_recomendation"> <span class="number_recomendation">1</span>Не забудьте документы (направление на диагностику, выпискуиз истории болезни, результаты предыдущих анализов и обследований) </div>
+              <div class="text_recomendation"> <span class="number_recomendation">2</span> Взять с собой удобную сменную одежду,  Лучше всего, если это будет просторная пижама либо халат без «молний», пуговиц и кнопок.</div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="text_recomendation"> <span class="number_recomendation">3</span> Перед процедурой МРТ пациенту необходимо избавиться от всех металлических элементов на одежде и на теле </div>
+              <div class="text_recomendation"> <span class="number_recomendation">4</span>Если в теле имеются какие-либо электронные или металлические имплантаты, частицы металла (пули, осколки, штифты и т.п.), необходимо сообщить об этом врачу заранее</div>
+            </div> 
          </div> 
     </div>
   </div>

@@ -1,6 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
 
 .pagewrap {
-  width: auto;
+  width: 100%;
   margin: 0 auto;
   padding: 0 30px 0 30px;
 }
@@ -17,7 +21,9 @@
 }
 
 .header_mobile {
-
+  display: flex;
+  
+  justify-content: flex-end;
 }
 
 .menu-main {
@@ -25,7 +31,11 @@
   margin: 10px 0 0 0;
   padding: 0;
   text-align: center;
-  background: url('burger_menu.png') no-repeat;
+  
+}
+
+.burger_menu {
+  background: url('../img/burger_menu.png') no-repeat;
 }
 
 img.doctor_main {
@@ -184,8 +194,366 @@ img.launch_24px {
 /* Всплывающий текст на картинку */
 
 .uslugi {
-  background: url('img/burger_menu.png') no-repeat;
+  background: url('../img/blue_background.png') no-repeat;
+ 
 }
+
+.uslugi h2{
+font-family: Graphik LCG;
+font-size: 44px;
+line-height: 110%;
+color: #383838;
+
+padding: 30px 0 30px 0;;
+}
+
+.cmrt-centri {
+width: 217px;
+height: 280px;
+background: #FFFFFF;
+box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1);
+border-radius: 6px;
+}
+
+.ul_lomonosova p{
+width: 195px;
+height: 56px;
+left: 99px;
+top: 1296px;
+font-family: Graphik LCG;
+font-size: 14px;
+line-height: 21px;
+color: #383838;
+}
+
+.kolmov_nab p{
+  width: 213px;
+  height: 17px;
+  left: 144px;
+  top: 1288px;
+  font-family: Graphik LCG;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2EA9E7;
+}
+
+.centri_nizh p{
+  width: auto; 
+  height: 44px; 
+  left: 144px;
+  top: 1203px; 
+  font-family: Graphik LCG; 
+  font-size: 16px; 
+  line-height: 24px; 
+  color: #383838; 
+  font-weight:bold;
+}
+
+.look_maps {
+width: auto;
+height: 47px;
+left: 85px;
+top: 1365px;
+background: linear-gradient(180deg, #EBF6FF 0%, #DAF0FF 100%);
+border: 1px solid rgba(0, 0, 0, 0.04);
+box-sizing: border-box;
+border-radius: 8px;
+}
+
+.look_maps p{
+font-family: Graphik LCG;
+font-size: 14px;
+line-height: 21px;
+color: #2EA9E7;
+text-align: center;
+margin-top: 10px;
+}
+
+img.look_maps {
+  width: 16px;
+  height: 16px;
+  left: 271px;
+  top: 1378px;
+}
+
+/* search */
+.poisk {
+    padding: 0 0 0 0;
+    display: inline-block;
+    width: 100%;
+   }
+
+#searchform {
+  margin: 0 auto;
+  width: auto;
+}
+
+input.submit {
+  display: inline-block;
+}
+
+.search {
+  /* устанавливаем необходимую ширину формы в зависимости от дизайна
+  ** форма без проблем растягивается */
+  width: 100%;
+  /* padding-top: 30px; */
+  border: 0;
+  /*border-bottom: 1px solid #979797;*/
+}
+
+.search input {
+  /* отключаем бордюры у инпутов */
+  width: 100%;
+  border: none;
+}
+
+/* стили для поля ввода */
+.search .input {
+  /* растягиваем поле ввода на всю ширину формы */
+  width: 85%;
+  
+  font-family: Roboto, Regular;
+  color: #626262;
+  font-size: 16px;
+  /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
+  ** регулируем высоту формы
+  ** внутренний отступ слева (37px) делаем больше правого,
+  ** т.к. там будет размещена кнопка отправки */
+  padding: 8px 15px 9px 15px;
+
+  /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /* добавляем внутренние тени */
+  /* box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3); */
+
+  /* закругляем углы */
+  /* border-radius: 20px; 
+
+  background: #EEE;
+  font: 13px Tahoma, Arial, sans-serif;
+  color: #555;*/
+  outline: none;
+}
+
+/* меняем оформление поля ввода при фокусе */
+.search .input:focus {
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+  background: #E8E8E8;
+  color: #333;
+}
+
+/* оформляем кнопку отправки */
+.search .submit {
+  
+  position: relative;
+  width: 37px;
+  height: 29px;
+  cursor: pointer;
+  margin: -35px 0 -8px 0;
+
+  /* растягиваем кнопку на всю высоту формы */
+  height: 100%;
+
+  cursor: pointer;
+  background: url(../img/icon_search_24px.png) 50% no-repeat;
+
+  /* добавляем прозрачность кнопке отправки */
+  opacity: 0.5;
+}
+
+/* при наведении курсора меняем прозрачность кнопки отправки */
+.search .submit:hover {
+  opacity: 0.8;
+}
+
+/* данное свойство необходимо для того, чтобы в браузерах
+** Chrome и Safari можно было стилизовать инпуты */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+/* search */
+
+.title_uslugi p {
+width: 145px;
+height: 20px;
+left: 370px;
+top: 1206px;
+font-family: Graphik LCG;
+font-size: 16px;
+line-height: 24px;
+color: #383838;
+font-weight: bold;
+z-index: 10;
+}
+
+.ellipse {
+width: 28px;
+height: 27px;
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+border-radius: 50%; /* may require vendor prefixes */
+background: #e3effa;
+display: inline-block;
+}
+
+.text_uslugi p {
+width: 197px;
+height: ;
+left: 370px;
+top: 1226px;
+
+font-family: Graphik LCG;
+font-size: 14px;
+line-height: 100%;
+display: flex;
+align-items: center;
+
+}
+
+/* mrt diagnostika */
+
+.diagnostika {
+  background-color: ;
+}
+
+.mrt_diagnostika_1 {
+width: 293px;
+height: 195px;
+left: -1.08px;
+top: 22.68px;
+}
+
+.mrt_diagnostika_2 {
+width: 187px;
+height: 123px;
+left: -20.08px;
+top: -2.32px;
+}
+
+.mrt_diagnostika_3 {
+width: 201.61px;
+height: 135.01px;
+left: 19.33px;
+top: 242.05px;
+}
+
+.mrt_diagnostika_4 {
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+border-radius: 12px;
+}
+
+img.img_mrt_diagnostika_1 {
+  max-width:100%;
+
+}
+
+img.img_mrt_diagnostika_2 {
+  max-width:100%;
+  
+  margin: -175px 0 0 310px;
+  z-index: 1;
+}
+
+img.img_mrt_diagnostika_3 {
+  max-width:100%;
+ 
+  margin: -70px 0 0 15px;
+  z-index: 1;
+}
+
+img.img_mrt_diagnostika_4 {
+  max-width:100%;
+  
+  margin: -290px 0 0 200px;
+  z-index: 1;
+}
+
+.title_diagnostika {
+font-family: Graphik LCG;
+font-size: 52px;
+line-height: 57px;
+display: flex;
+align-items: center;
+margin: 0 0 0 -50px;
+}
+
+.sub_title_diagnostika {
+width: 421.85px;
+height: 33px;
+left: 533.16px;
+top: 41.32px;
+font-family: Graphik LCG;
+font-size: 22px;
+line-height: 33px;
+display: flex;
+align-items: center;
+margin: 0 0 0 -50px;
+}
+
+.text_diagnostika {
+height: auto;
+left: 560.16px;
+right: 43.84px;
+top: 102px;
+font-family: Graphik LCG;
+font-size: 18px;
+line-height: 28px;
+display: flex;
+align-items: center;
+}
+
+.title_preimuschestva {
+width: 293px;
+height: 26px;
+left: 84px;
+top: 2149px;
+font-family: Graphik LCG;
+font-size: 18px;
+line-height: 25px;
+display: flex;
+align-items: center;
+color: #2E2D31;
+}
+
+.text_GE_Signa_Echospeed_Plus {
+width: auto;
+height: 109.92px;
+left: 625px;
+top: 2173.74px;
+font-family: Graphik LCG;
+font-size: 18px;
+line-height: 26px;
+display: flex;
+align-items: center;
+color: #2E2D31;
+}
+
+.detail {
+width: 198px;
+height: 22.74px;
+left: 499.57px;
+bottom: 67.26px;
+font-family: Graphik LCG;
+font-size: 16px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: right;
+color: #5CAEE6;
+}
+
+img.img_GE_Signa_Echospeed_Plus {
+  margin: -20px 0 0 -10px;
+}
+
+/* mrt giagnostika */
+
 
 .phone {
   padding: 5px 0 0 0;
@@ -199,75 +567,6 @@ img.launch_24px {
 
 }
 
-/* Main Menu */
-/* @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed'); 
-.menu {
-  background-color: ;
-  display: inline-block;
-  text-align: center;
-  width: 117px;
-  height: 52px;
-}
-
-.menu-main {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  background: white;
-}
-ul.menu-main {
-  margin: 7px 0 0 0;
-}
-
-.menu-main li {display: inline-block;}
-.menu-main li:after {
-  content: " ";
-  color: #606060;
-  display: inline-block;
-  vertical-align:top;
-}
-.menu-main li:last-child:after {content: none;}
-.menu-main a {
-  text-decoration: none;
-  font-family: 'Ubuntu Condensed', sans-serif; 
-  letter-spacing: 2px;
-  position: relative;
-  margin: 0 10px 0 10px;
-  font-size: 13px;
- text-transform: uppercase; 
-  display: inline-block;
-  transition: color .2s;
-}
-.menu-main a, .menu-main a:visited {color: #9d999d;}
-.menu-main a.current, .menu-main a:hover{color: #feb386;}
-.menu-main a:before,
-.menu-main a:after {
-  content: "";
-  position: absolute;
-  height: 4px;
-  top: auto;
-  right: 50%;
-  bottom: -5px;
-  left: 50%;
-  background: #feb386;
-  transition: .8s;
-}
-.menu-main a:hover:before, .menu-main .current:before {left: 0;}
-.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
-
-@media (max-width: 550px) {
-.menu-main {padding-top: 0;}
-.menu-main li {display: block;}
-.menu-main li:after {content: none;}
-.menu-main a {
-  padding: 25px 0 20px; 
-  margin: 0 30px;
-  }
-} */
-/* Main Menu */
-
-/* Main Menu Mobile*/
 
 nav {
   height: 40px;
@@ -419,20 +718,176 @@ margin: 0 0 0 100px;
 
 }
 
-.diagnostika {
-  background-color: #dfce58;
-}
-
+/* utp */
 .utp {
-  background-color: #dfce58;
+  background-color: ;
+
 }
 
-.utp-2 {
-  background-color: #dfce58;
+.utp_logo_1 {
+  display: inline-block;
 }
+
+.utp_logo_2 {
+  display: inline-block;
+}
+
+.utp_logo_3 {
+  display: inline-block;
+}
+
+.utp_logo_4 {
+  display: inline-block;
+}
+
+.restore_24px {
+  margin: -20px 0 0 0;
+}
+
+.account_balance_wallet_24px {
+  margin: -20px 0 0 0;
+}
+
+.event_24px {
+  margin: -20px 0 0 0;
+}
+
+.brightness_4_24px {
+  margin: -20px 0 0 0;
+}
+
+.utp_text_1 {
+left: 68px;
+right: 20px;
+top: calc(50% - 42px/2 + 1px);
+font-family: Graphik LCG;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+color: #1173A8;
+width: 100px;
+height: 42px;
+display: inline-block;
+}
+
+.utp_text_2 {
+height: 42px;
+left: 68px;
+right: 20px;
+top: calc(50% - 42px/2 + 1px);
+font-family: Graphik LCG;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+color: #1173A8;
+width: 100px;
+height: 42px;
+display: inline-block;
+}
+
+.utp_text_3 {
+left: 68px;
+right: 20px;
+top: calc(50% - 42px/2 + 1px);
+font-family: Graphik LCG;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+color: #1173A8;
+width: 136px;
+height: 42px;
+display: inline-block;
+}
+
+.utp_text_4 {
+left: 68px;
+right: 20px;
+top: calc(50% - 42px/2 + 1px);
+font-family: Graphik LCG;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+color: #1173A8;
+width: 136px;
+height: 42px;
+display: inline-block;
+}
+
+/* utp */
+
+/* utp-2 */
+.utp-2 {
+  
+  background-color: ;
+}
+
+.title_preimuschestva {
+width: 293px;
+height: 26px;
+left: 84px;
+top: 2149px;
+font-family: Graphik LCG;
+font-size: 18px;
+line-height: 25px;
+display: flex;
+align-items: center;
+color: #2E2D31;
+font-weight: bold;
+}
+
+.text_preimuschestva {
+width: auto;
+height: auto;
+left: 84px;
+top: 2190px;
+font-family: Graphik LCG;
+font-size: 18px;
+line-height: 26px;
+display: flex;
+align-items: center;
+color: #2E2D31;
+}
+
+/* utp-2 */
 
 .recomendation {
-  background-color: #dfce58;
+  background-color: ;
+}
+
+.title_recomendation {
+width: auto;
+height: auto;
+font-family: Graphik LCG;
+font-size: 24px;
+line-height: ;
+color: #000000;
+}
+
+.text_recomendation {
+width: auto;
+height: auto;
+font-family: Graphik LCG;
+font-size: 18px;
+line-height: 156%;
+display: flex;
+align-items: center;
+color: #000000;
+padding: 15px 0 15px 0;
+}
+
+.number_recomendation {
+font-family: Graphik LCG;
+font-size: 18px;
+line-height: 156%;
+display: flex;
+align-items: center;
+color: #0086CF;
+vertical-align:top;
+margin: 0 0 0 0;
 }
 
 .about_clinic {
@@ -496,95 +951,7 @@ margin: 0 0 0 100px;
    color: #fff;
 }
 
-.poisk {
-    padding: 0 10px 0 10px; 
-   }
 
-#searchform {
-  margin: 0 auto;
-  width: auto;
-}
-
-.search {
-  /* устанавливаем необходимую ширину формы в зависимости от дизайна
-  ** форма без проблем растягивается */
-  width: 100%;
-  /* padding-top: 30px; */
-  border: 0;
-  border-bottom: 1px solid #979797;
-}
-
-.search input {
-  /* отключаем бордюры у инпутов */
-  border: none;
-}
-
-/* стили для поля ввода */
-.search .input {
-  /* растягиваем поле ввода на всю ширину формы */
-  width: 100%;
-  padding: 0 0 0 0;
-  font-family: Roboto, Regular;
-  color: #626262;
-  font-size: 16px;
-  /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
-  ** регулируем высоту формы
-  ** внутренний отступ слева (37px) делаем больше правого,
-  ** т.к. там будет размещена кнопка отправки */
-  padding: 8px 15px 9px 50px;
-
-  /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-
-  /* добавляем внутренние тени */
-  /* box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3); */
-
-  /* закругляем углы */
-  /* border-radius: 20px; 
-
-  background: #EEE;
-  font: 13px Tahoma, Arial, sans-serif;
-  color: #555;*/
-  outline: none;
-}
-
-/* меняем оформление поля ввода при фокусе */
-.search .input:focus {
-  box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
-  background: #E8E8E8;
-  color: #333;
-}
-
-/* оформляем кнопку отправки */
-.search .submit {
-  
-  position: relative;
-  width: 37px;
-  height: 29px;
-  cursor: pointer;
-  margin: -35px 0 0 0;
-
-  /* растягиваем кнопку на всю высоту формы */
-  height: 100%;
-
-  cursor: pointer;
-  background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
-
-  /* добавляем прозрачность кнопке отправки */
-  opacity: 0.5;
-}
-
-/* при наведении курсора меняем прозрачность кнопки отправки */
-.search .submit:hover {
-  opacity: 0.8;
-}
-
-/* данное свойство необходимо для того, чтобы в браузерах
-** Chrome и Safari можно было стилизовать инпуты */
-input[type="search"] {
-  -webkit-appearance: none;
-}
 
 .img {
    max-width: 100%;

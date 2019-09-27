@@ -55,7 +55,7 @@
   }
   nav a#pull:after {
     content:" ";
-    background: url('burger_menu.png') no-repeat;
+    background: url('../img/burger_menu.png') no-repeat;
     width: 30px;
     height: 30px;
     display: inline-block;
@@ -111,6 +111,25 @@
     position: absolute;
     right: 15px;
     top: 10px;
+  }
+
+  .logo_disappear {
+    display: none;
+  }
+
+  img.doctor_main {
+  width: auto;
+  height: auto;
+  margin: -40px 0 0 0;
+  padding: 0;
+  }
+  
+  .title_diagnostika {
+  margin: 0 0 0 0;
+  }
+
+  .sub_title_diagnostika {
+  margin: 0 0 0 0;
   }
 
 }
@@ -173,6 +192,18 @@
    display: none;
   }
 
+  .logo_disappear {
+    display: none;
+  }
+
+  .title_diagnostika {
+  margin: 0 0 0 0;
+  }
+
+  .sub_title_diagnostika {
+  margin: 0 0 0 0;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -222,6 +253,101 @@
     top: 10px;
   }
 
+ .logo_disappear {
+    display: none;
+  }
+  .title_diagnostika {
+  margin: 0 0 0 0;
+  }
+
+  .sub_title_diagnostika {
+  margin: 0 0 0 0;
+  }
+
+  .utp_logo_1 {
+  display: inline-block;
+}
+
+.restore_24px {
+  margin: 0 0 0 0;
+}
+
+  .utp_text_1 {
+  left: 68px;
+  right: 20px;
+  top: calc(50% - 42px/2 + 1px);
+  font-family: Graphik LCG;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #1173A8;
+  width: auto;
+  height: 42px;
+  display: inline-block;
+  }
+
+  .utp_text_2 {
+  left: 68px;
+  right: 20px;
+  top: calc(50% - 42px/2 + 1px);
+  font-family: Graphik LCG;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #1173A8;
+  width: auto;
+  height: 42px;
+  display: inline-block;
+  }
+
+  .utp_text_3 {
+  left: 68px;
+  right: 20px;
+  top: calc(50% - 42px/2 + 1px);
+  font-family: Graphik LCG;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #1173A8;
+  width: auto;
+  height: 42px;
+  display: inline-block;
+  }
+
+  .utp_text_4 {
+  left: 68px;
+  right: 20px;
+  top: calc(50% - 42px/2 + 1px);
+  font-family: Graphik LCG;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #1173A8;
+  width: auto;
+  height: 42px;
+  display: inline-block;
+  }
+
+.account_balance_wallet_24px {
+  margin: 0;
+}
+
+.event_24px {
+  margin: 0;
+}
+
+.brightness_4_24px {
+  margin: 0;
+}
+
+img.img_GE_Signa_Echospeed_Plus {
+  display: none;
+}
+
 }
 
 @media only screen and (max-width : 320px) {
@@ -232,5 +358,12 @@
   }
   nav li a {
     border-bottom: 1px solid #576979;
+  }
+    .title_diagnostika {
+  margin: 0 0 0 0;
+  }
+
+  .sub_title_diagnostika {
+  margin: 0 0 0 0;
   }
 }
